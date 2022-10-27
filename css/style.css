@@ -1,0 +1,581 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+._i-bg {
+  position: relative;
+}
+
+._i-bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+[class*=_container] {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header .persons-nav {
+  background-color: #F2F3F5;
+}
+
+.header .persons-nav__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 13px 0;
+}
+
+.header .persons-nav__time-work {
+  position: relative;
+  padding: 0 0 0 26px;
+  font-family: 'TT Norms';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1B1C21;
+}
+
+.header .persons-nav__time-work::before {
+  content: " ";
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  background: url(../img/header/persons-nav/time-work/time-work.svg) center/cover no-repeat;
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+.header .persons-nav .info-menu-persons__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .persons-nav .info-menu-persons__item {
+  font-family: 'TT Norms';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.header .persons-nav .info-menu-persons__item a {
+  color: #505567;
+  text-decoration: none;
+}
+
+.header .persons-nav .info-menu-persons__item:nth-last-child(2) {
+  position: relative;
+  padding: 0 25px 0 0;
+}
+
+.header .persons-nav .info-menu-persons__item:nth-last-child(2) a::after {
+  content: "";
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  background: url(../img/header/persons-nav/info-menu-persons/arrow.svg) center/cover no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0px;
+}
+
+.header .persons-nav .info-menu-persons__item:not(:last-child) {
+  margin: 0 15px 0 0;
+}
+
+.header .persons-nav .links-persons__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .persons-nav .links-persons__vk {
+  margin: 0 15px 0 0;
+}
+
+.header .persons-nav .links-persons__inst {
+  margin: 0 30px 0 0;
+}
+
+.header .persons-nav .links-persons__my-orders {
+  font-family: 'TT Norms';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.header .persons-nav .links-persons__my-orders a {
+  color: #505567;
+  position: relative;
+  padding: 0 0 0 30px;
+  text-decoration: none;
+}
+
+.header .persons-nav .links-persons__my-orders a::before {
+  content: " ";
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  background: url(../img/header/persons-nav/links-persons/my-orders.svg) center/contain no-repeat;
+  position: absolute;
+  top: -3px;
+  left: 0;
+}
+
+.header .base-menu__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 18px 0;
+}
+
+.header .base-menu .logo__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 40px 0 0;
+}
+
+.header .base-menu .logo__picture {
+  padding: 0 168px 0 0;
+  margin: 0 20px 0 0;
+}
+
+.header .base-menu .logo__picture img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: left;
+     object-position: left;
+}
+
+.header .base-menu .logo__title {
+  font-family: 'TT Norms';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1B1C21;
+  width: 109px;
+}
+
+.header .base-menu__search {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 375px;
+          flex: 0 1 375px;
+  position: relative;
+  margin: 0 40px 0 0;
+}
+
+.header .base-menu__search input {
+  min-height: 100%;
+  min-width: 100%;
+  background: none;
+  border: 1px solid #cccccc;
+  border-radius: 18px;
+  padding: 5px 10px;
+}
+
+.header .base-menu__search input::-webkit-input-placeholder {
+  font-family: 'TT Norms';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #7D818E;
+  font-size: 16px;
+}
+
+.header .base-menu__search input:-ms-input-placeholder {
+  font-family: 'TT Norms';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #7D818E;
+  font-size: 16px;
+}
+
+.header .base-menu__search input::-ms-input-placeholder {
+  font-family: 'TT Norms';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #7D818E;
+  font-size: 16px;
+}
+
+.header .base-menu__search input::placeholder {
+  font-family: 'TT Norms';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #7D818E;
+  font-size: 16px;
+}
+
+.header .base-menu__search button {
+  width: 24px;
+  height: 24px;
+  background: url(../img/header/base-menu/search/search.svg) center/cover no-repeat;
+  position: absolute;
+  top: 2px;
+  right: 10px;
+}
+
+.header .base-menu .telephone__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 30px 0 0;
+}
+
+.header .base-menu .telephone__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 15px 0 0;
+}
+
+.header .base-menu .telephone__title {
+  position: relative;
+  font-family: 'TT Norms';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 25px 0 0;
+}
+
+.header .base-menu .telephone__title::after {
+  content: " ";
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  background: url(../img/header/base-menu/teleph/arrow.svg) center/contain no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header .base-menu .telephone__subtitle {
+  font-family: 'TT Norms';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #E2195B;
+  text-decoration: underline;
+}
+
+.header .base-menu .telephone__subtitle a:visited {
+  color: #E2195B;
+}
+
+.header .base-menu .shopping-cart__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .base-menu .shopping-cart__favourites {
+  margin: 0 20px 0 0;
+  position: relative;
+}
+
+.header .base-menu .shopping-cart__counter {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20px;
+  height: 20px;
+  background: #E2195B;
+  border: 1px solid white;
+  border-radius: 40px;
+  color: white;
+  -webkit-box-shadow: 0 4px 10px rgba(34, 42, 70, 0.1);
+          box-shadow: 0 4px 10px rgba(34, 42, 70, 0.1);
+  font-family: 'TT Norms';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  position: absolute;
+  top: 0px;
+  right: -10px;
+  display: none;
+}
+
+.header .base-menu .shopping-cart .basket__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .base-menu .shopping-cart .basket__img {
+  margin: 0 14px 0 0;
+  position: relative;
+}
+
+.header .base-menu .shopping-cart .basket__counter {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20px;
+  height: 20px;
+  background: #E2195B;
+  border: 1px solid white;
+  border-radius: 40px;
+  color: white;
+  -webkit-box-shadow: 0 4px 10px rgba(34, 42, 70, 0.1);
+          box-shadow: 0 4px 10px rgba(34, 42, 70, 0.1);
+  font-family: 'TT Norms';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  position: absolute;
+  top: 0px;
+  right: -10px;
+}
+
+.header .base-menu .shopping-cart .basket__title {
+  font-family: 'TT Norms';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-size: 16px;
+  color: #E2195B;
+}
+
+.header .website-nav {
+  -webkit-box-shadow: 0px 4px 15px rgba(34, 42, 70, 0.08);
+          box-shadow: 0px 4px 15px rgba(34, 42, 70, 0.08);
+}
+
+.header .website-nav__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 19px 0;
+}
+
+.header .website-nav__discount {
+  font-family: 'TT Norms';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0 0 0 30px;
+  margin: 0 41px 0 0;
+}
+
+.header .website-nav__discount::after {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background: url(../img/header/website-nav/discount/discount.svg) center/cover no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header .website-nav__discount a {
+  text-decoration: none;
+  color: #E2195B;
+}
+
+.header .website-nav__menu {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.header .website-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .website-nav__item {
+  font-family: 'TT Norms';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-size: 16px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.header .website-nav__item:not(:last-child) {
+  margin: 0 48px 0 0;
+}
+
+.header .website-nav__item:not(:nth-last-child(-n+2)) {
+  position: relative;
+  padding: 0 25px 0 0;
+}
+
+.header .website-nav__item:not(:nth-last-child(-n+2))::after {
+  content: " ";
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  background: url(../img/header/website-nav/menu-item/arrow.svg) center/contain no-repeat;
+  position: absolute;
+  top: 2.5px;
+  right: 0px;
+}
+
+.header .website-nav__item:nth-last-child(-n+2) {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.header .website-nav__item:nth-last-child(-n+2) a {
+  text-decoration: none;
+  color: #1B1C21;
+}
